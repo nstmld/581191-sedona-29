@@ -1,0 +1,27 @@
+:root {
+  --basic-white: #fff;
+  --basic-black: #000;
+
+  /* grays */
+  --general-light-gray: #F2F2F2;
+  --general-dark-gray: #333;
+
+  --filter-gray: #CACACA;
+
+  --hotel-middle-gray: #666;
+
+  --reasons-list-gray: #EEE;
+
+  --form-hover-gray: #EBEBEB;
+  --form-focus-gray: #E5E5E5;
+
+  /* browns */
+  --basic-brown: #766357;
+  --middle-brown: #604E43;
+  --dark-brown: #503E33;
+
+  /* blues */
+  --basic-blue: #81B3D2;
+  --middle-blue: #669EC0;
+  --darl-blue: #5496BD;
+}
