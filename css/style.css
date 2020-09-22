@@ -14,6 +14,9 @@
 
   --form-hover-gray: #EBEBEB;
   --form-focus-gray: #E5E5E5;
+  --form-shadow: rgba(0, 1, 1, 0.15);
+
+  --background-shadow: rgba(0, 1, 1, 0.2);
 
   /* browns */
   --basic-brown: #766357;
@@ -24,4 +27,28 @@
   --basic-blue: #81B3D2;
   --middle-blue: #669EC0;
   --darl-blue: #5496BD;
+}
+
+/* Global */
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--general-light-gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
