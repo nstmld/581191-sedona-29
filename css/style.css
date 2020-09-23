@@ -3,8 +3,8 @@
   --basic-black: #000;
 
 /* grays */
-  --general-light-gray: #F2F2F2;
-  --general-dark-gray: #333;
+  --basic-light-gray: #F2F2F2;
+  --basic-dark-gray: #333;
 
   --filter-gray: #CACACA;
 
@@ -39,9 +39,10 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: var(--basic-black);
+  text-align: center;
+  color: var(--basic-dark-gray);
   text-transform: uppercase;
-  background-color: var(--general-light-gray);
+  background-color: var(--basic-light-gray);
 }
 
 .page-body a {
@@ -55,29 +56,80 @@ img {
 
 /* main header */
 
-.main-navigation{
+.main-navigation {
   background-color: var(--basic-white);
   font-weight: 700;
   line-height: 26px;
-}
-
-.main-navigation-links{
-  list-style: none;
-}
-
-.main-navigation-links a:visited{
   color: var(--basic-black);
 }
 
-.main-navigation-links a:hover{
+.main-navigation-links {
+  list-style: none;
+}
+
+.main-navigation-links a:visited {
+  color: var(--basic-black);
+}
+
+.main-navigation-links a:hover {
   color: var(--basic-blue);
 }
 
-.main-navigation-links a:active{
+.main-navigation-links a:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
 .main-navigation-links-current a:not([href]) {
   color: var(--basic-brown);
+}
+
+/* headind */
+
+.heading {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.reason-with-image .heading {
+  color: var(--basic-white);
+}
+
+/* main-cover */
+
+.main-cover {
+  background-color: var(--basic-white);
+}
+
+.main-cover-5reasons {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+/* reasons with image */
+
+.reason-with-image {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+/* list */
+
+.list {
+  list-style: none;
+}
+
+/* reasons list */
+
+.reasons-list {
+  background-color: var(--reasons-list-gray);
+}
+
+/* recommendations */
+
+.recommendations {
+  background-color: var(--basic-white);
 }
