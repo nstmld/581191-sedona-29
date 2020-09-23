@@ -1,5 +1,5 @@
 :root {
-  --basic-white: #fff;
+  --basic-white: #FFF;
   --basic-black: #000;
 
   --transparent-white: rgba(255, 255, 255, 0.3);
@@ -37,8 +37,6 @@
 
 body {
   min-width: 1220px;
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -58,6 +56,10 @@ img {
   height: auto;
 }
 
+.clear-list {
+  list-style: none;
+}
+
 /* main header */
 
 .main-navigation {
@@ -65,11 +67,6 @@ img {
   font-weight: 700;
   line-height: 26px;
   color: var(--basic-black);
-}
-
-.main-navigation-links {
-  list-style: none;
-  color: inherit;
 }
 
 .main-navigation-links-current a:not([href]) {
@@ -109,7 +106,7 @@ img {
   background-color: var(--basic-white);
 }
 
-.main-cover-5reasons {
+.reasons {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -126,11 +123,6 @@ img {
   color: var(--basic-white);
 }
 
-/* list */
-
-.list {
-  list-style: none;
-}
 
 /* reasons list */
 
@@ -188,9 +180,6 @@ img {
 }
 
 .footer-contacts {
-  font-family: inherit;
-  text-align: inherit;
-  text-transform: inherit;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -202,10 +191,6 @@ img {
 
 .footer-hashtag {
   color: inherit;
-}
-
-.footer-social ul {
-  list-style: none;
 }
 
 .footer-social-button {
@@ -220,7 +205,7 @@ img {
   background-color: var(--dark-blue);
 }
 
-.footer-social-button img:active {
+.footer-social-button:active img {
   opacity: 0.3;
 }
 
@@ -245,12 +230,12 @@ img {
 /* modal */
 
 .modal-hotel-search {
-  background: #FFFFFF;
+  background: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   font-weight: 700;
 }
 
-input[type="button"] {
+.button-search {
   background-color: var(--basic-blue);
   color: var(--basic-white);
   font-family: inherit;
@@ -260,25 +245,25 @@ input[type="button"] {
   line-height: 26px;
 }
 
-input[type="button"]:hover {
+.button-search:hover {
   background-color: var(--middle-blue);
 }
 
-input[type="button"]:active {
+.button-search:active {
   background-color: var(--dark-blue);
   color: var(--transparent-white);
 }
 
-input[type="date"] {
+.input-date {
   background-color: var(--basic-light-gray);
-  border: 0px;
+  border: 0;
 }
 
-input[type="date"]:hover {
+.input-date:hover {
   background-color: var(--form-hover-gray);
 }
 
-input[type="date"]:focus {
+.input-date:focus {
   background-color: transparent;
   border: 3px solid var(--form-focus-gray);
 }

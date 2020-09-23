@@ -14,7 +14,7 @@
         <a class="main-navigation-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
-        <ul class="main-navigation-links">
+        <ul class="main-navigation-links clear-list">
           <li class="main-navigation-links-left"><a href="blank.html">информация</a></li>
           <li class="main-navigation-links-left"><a href="blank.html">фото и видео</a></li>
           <li class="main-navigation-links-right"><a href="blank.html">карта штата</a></li>
@@ -27,7 +27,7 @@
       <section class="main-cover">
         <img src="img/main-cover.jpg" width="1200" height="509" alt="Фото гор около города Седона">
         <h1 class="heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <h2 class="main-cover-5reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+        <h2 class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </section>
 
       <section class="reason-with-image">
@@ -39,7 +39,7 @@
 
       <section class="recommendations">
         <h2 class="visually-hidden">Рекомендации</h2>
-        <ul class="list">
+        <ul class="clear-list">
           <li>
             <img src="img/icon-motel.svg" width="75" height="72" alt="Жильё в Седоне">
             <h3 class="heading">Жильё</h3>
@@ -66,7 +66,7 @@
       </section>
 
       <section class="reasons-list">
-        <ul class="list">
+        <ul class="clear-list">
           <li>
             <h3 class="heading">Небольшая площадь</h3>
             <span>- №3 -</span>
@@ -107,7 +107,7 @@
       </section>
       <section class="footer-social">
         <h2>Социальные сети</h2>
-        <ul>
+        <ul class="clear-list">
           <li><a class="footer-social-button" href="#">Twitter<img src="img/twitter.svg" width="17" height="15" alt="twitter icon"></a></li>
           <li><a class="footer-social-button" href="#">Facebook<img src="img/fb.svg" width="12" height="22" alt="fb icon"></a></li>
           <li><a class="footer-social-button" href="#">YouTube<img src="img/youtube.svg" width="20" height="16" alt="youtube icon"></a></li>
@@ -123,18 +123,18 @@
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form>
         <label>
-          Дата заезда:<input type="date" name="check-in">
+          Дата заезда:<input class="input-date" type="date" name="check-in">
         </label>
         <label>
-          Дата выезда:<input type="date" name="check-out">
+          Дата выезда:<input class="input-date" type="date" name="check-out">
         </label>
         <label>
-          Взрослые:<input type="number" name="adult">
+          Взрослые:<input class="input-adult" type="number" name="adult">
         </label>
         <label>
-          Дети:<input type="number" name="children">
+          Дети:<input class="input-children" type="number" name="children">
         </label>
-        <input type="button" value="найти" name="search">
+        <button class="button-search" type="submit">найти</button>
       </form>
     </section>
 
