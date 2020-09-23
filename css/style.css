@@ -241,3 +241,44 @@ img {
 .logo-academy:active {
   background-image: url(../img/logo-htmlacademy-gray.svg);
 }
+
+/* modal */
+
+.modal-hotel-search {
+  background: #FFFFFF;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  font-weight: 700;
+}
+
+input[type="button"] {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+input[type="button"]:hover {
+  background-color: var(--middle-blue);
+}
+
+input[type="button"]:active {
+  background-color: var(--dark-blue);
+  color: var(--transparent-white);
+}
+
+input[type="date"] {
+  background-color: var(--basic-light-gray);
+  border: 0px;
+}
+
+input[type="date"]:hover {
+  background-color: var(--form-hover-gray);
+}
+
+input[type="date"]:focus {
+  background-color: transparent;
+  border: 3px solid var(--form-focus-gray);
+}
