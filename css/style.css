@@ -18,6 +18,8 @@
   --form-focus-gray: #E5E5E5;
   --form-shadow: rgba(0, 1, 1, 0.15);
 
+  --footer-gray: rgba(255, 255, 255, 0.9);
+
   --background-shadow: rgba(0, 1, 1, 0.2);
 
 /* browns */
@@ -28,7 +30,7 @@
 /* blues */
   --basic-blue: #81B3D2;
   --middle-blue: #669EC0;
-  --darl-blue: #5496BD;
+  --dark-blue: #5496BD;
 }
 
 /* global */
@@ -67,23 +69,29 @@ img {
 
 .main-navigation-links {
   list-style: none;
-}
-
-.main-navigation-links a:visited {
-  color: var(--basic-black);
-}
-
-.main-navigation-links a:hover {
-  color: var(--basic-blue);
-}
-
-.main-navigation-links a:active {
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: inherit;
 }
 
 .main-navigation-links-current a:not([href]) {
   color: var(--basic-brown);
+}
+
+/*main links */
+
+.main-navigation-links a:visited,
+.footer-contacts a:visited {
+  color: var(--basic-black);
+}
+
+.main-navigation-links a:hover,
+.footer-contacts a:hover {
+  color: var(--basic-blue);
+}
+
+.main-navigation-links a:active,
+.footer-contacts a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 /* general headind */
@@ -171,4 +179,65 @@ img {
 
 .map {
   background-color: var(--basic-white);
+}
+
+/* main footer */
+
+.main-footer {
+  background-color: var(--footer-gray);
+}
+
+.footer-contacts {
+  font-family: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.footer-hashtag {
+  color: inherit;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social-button {
+  background-color: var(--basic-blue);
+}
+
+.footer-social-button:hover {
+  background-color: var(--middle-blue);
+}
+
+.footer-social-button:active {
+  background-color: var(--dark-blue);
+}
+
+.footer-social-button img:active {
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
+
+.logo-academy {
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.logo-academy:hover {
+  background-image: url(../img/logo-htmlacademy-blue.svg);
+}
+
+.logo-academy:active {
+  background-image: url(../img/logo-htmlacademy-gray.svg);
 }
