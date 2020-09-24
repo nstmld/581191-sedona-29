@@ -23,6 +23,8 @@
 
   --background-shadow: rgba(0, 1, 1, 0.2);
 
+  --active-logo-academy: #BDBBBC;
+
 /* browns */
   --basic-brown: #766357;
   --middle-brown: #604E43;
@@ -222,11 +224,11 @@ img {
   border-bottom: 0;
 }
 
-.sort-by-price a svg:hover{
+.sort-by-price svg:hover{
   fill: var(--basic-black);
 }
 
-.sort-by-price a svg:active{
+.sort-by-price svg:active{
   fill: var(--basic-blue);
 }
 
@@ -274,18 +276,12 @@ img {
   line-height: 26px;
 }
 
-.logo-academy {
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
+.logo-academy svg:hover {
+  fill: var(--basic-blue);
 }
 
-.logo-academy:hover {
-  background-image: url(../img/logo-htmlacademy-blue.svg);
-}
-
-.logo-academy:active {
-  background-image: url(../img/logo-htmlacademy-gray.svg);
+.logo-academy svg:active {
+  fill: var(--active-logo-academy);
 }
 
 /* modal */
