@@ -23,7 +23,10 @@
 
   --background-shadow: rgba(0, 1, 1, 0.2);
 
+/* logo academy */
+
   --active-logo-academy: #BDBBBC;
+  --logo-academy: #231F20;
 
 /* browns */
   --basic-brown: #766357;
@@ -180,7 +183,7 @@ img {
 
 .search-filter {
   background-color: var(--basic-brown);
-  background-image: url(img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   color: var(--basic-white);
@@ -225,6 +228,10 @@ img {
   border-bottom: 0;
 }
 
+.sort-by-price svg {
+  fill: var(--filter-gray);
+}
+
 .sort-by-price svg:hover {
   fill: var(--basic-black);
 }
@@ -248,32 +255,34 @@ img {
   text-align: left;
 }
 
-.hotel-list-item h3 {
+.hotel-header {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: var(--basic-black);
 }
 
-.hotel-list-item h3:hover {
+.hotel-header:hover {
   color: var(--basic-blue);
 }
 
-.hotel-list-item h3:active {
+.hotel-header:active {
   color: var(--transparent-black);
 }
 
 .more-button {
   color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
   background-color: var(--basic-blue);
 }
 
-.more-button:hover {
+.more-button:hover{
   background-color: var(--middle-blue);
 }
 
-.more-button:active {
+.more-button:active{
   background-color: var(--dark-blue);
   color: var(--transparent-white);
 }
@@ -338,11 +347,15 @@ img {
   line-height: 26px;
 }
 
-.logo-academy svg:hover {
+.logo-academy svg {
+  fill: var(--logo-academy);
+}
+
+.logo-academy:hover svg {
   fill: var(--basic-blue);
 }
 
-.logo-academy svg:active {
+.logo-academy:active svg {
   fill: var(--active-logo-academy);
 }
 
