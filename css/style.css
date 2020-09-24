@@ -184,6 +184,7 @@ img {
   background-position: top center;
   background-repeat: no-repeat;
   color: var(--basic-white);
+  text-align: left;
 }
 
 /* search result */
@@ -203,37 +204,98 @@ img {
   line-height: 18px;
 }
 
-.sort-items a{
+.sort-items a {
   font-size: 12px;
   line-height: 18px;
   color: var(--transparent-black);
   border-bottom: 1px dashed var(--basic-blue);
 }
 
-.sort-items a:hover{
+.sort-items a:hover {
   color: var(--basic-blue);
 }
 
-.sort-items a:active{
+.sort-items a:active {
   color: var(--basic-black);
   border-bottom: 0;
 }
 
-.sort-items a:not([href]){
+.sort-items a:not([href]) {
   color: var(--basic-blue);
   border-bottom: 0;
 }
 
-.sort-by-price svg:hover{
+.sort-by-price svg:hover {
   fill: var(--basic-black);
 }
 
-.sort-by-price svg:active{
+.sort-by-price svg:active {
   fill: var(--basic-blue);
 }
 
 .sort-by-price a:not([href]) svg{
   fill: var(--basic-blue);
+}
+
+/* list of hotels */
+
+.hotel-list {
+  border-top: 1px solid var(--form-focus-gray);
+}
+
+.hotel-list-item {
+  border-bottom: 1px solid var(--form-focus-gray);
+  text-align: left;
+}
+
+.hotel-list-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.hotel-list-item h3:hover {
+  color: var(--basic-blue);
+}
+
+.hotel-list-item h3:active {
+  color: var(--transparent-black);
+}
+
+.more-button {
+  color: var(--basic-white);
+  font-weight: 700;
+  background-color: var(--basic-blue);
+}
+
+.more-button:hover {
+  background-color: var(--middle-blue);
+}
+
+.more-button:active {
+  background-color: var(--dark-blue);
+  color: var(--transparent-white);
+}
+
+.book-button {
+  color: var(--basic-white);
+  font-weight: 700;
+  background-color: var(--basic-brown);
+}
+
+.book-button:hover {
+  background-color: var(--middle-brown);
+}
+
+.book-button:active {
+  background-color: var(--dark-brown);
+  color: var(--transparent-white);
+}
+
+.rating {
+  color: var(--hotel-middle-gray);
+  background-color: var(--basic-light-gray);
 }
 
 /* main footer */
