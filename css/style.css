@@ -69,10 +69,6 @@ img {
   color: var(--basic-black);
 }
 
-.main-navigation-links-current a:not([href]) {
-  color: var(--basic-brown);
-}
-
 /*main links */
 
 .main-navigation-links a:visited,
@@ -89,6 +85,10 @@ img {
 .footer-contacts a:active {
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.main-navigation-links a:not([href]) {
+  color: var(--basic-brown);
 }
 
 /* general headind */
