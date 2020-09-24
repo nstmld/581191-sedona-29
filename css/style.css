@@ -3,6 +3,7 @@
   --basic-black: #000;
 
   --transparent-white: rgba(255, 255, 255, 0.3);
+  --transparent-black: rgba(0, 0, 0, 0.3);
 
 /* grays */
   --basic-light-gray: #F2F2F2;
@@ -171,6 +172,66 @@ img {
 
 .map {
   background-color: var(--basic-white);
+}
+
+/* hotels filter */
+
+.search-filter {
+  background-color: var(--basic-brown);
+  background-image: url(img/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+}
+
+/* search result */
+
+.search-result {
+  background-color: var(--basic-white);
+}
+
+.search-result-amount {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-items a{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--transparent-black);
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sort-items a:hover{
+  color: var(--basic-blue);
+}
+
+.sort-items a:active{
+  color: var(--basic-black);
+  border-bottom: 0;
+}
+
+.sort-items a:not([href]){
+  color: var(--basic-blue);
+  border-bottom: 0;
+}
+
+.sort-by-price a svg:hover{
+  fill: var(--basic-black);
+}
+
+.sort-by-price a svg:active{
+  fill: var(--basic-blue);
+}
+
+.sort-by-price a:not([href]) svg{
+  fill: var(--basic-blue);
 }
 
 /* main footer */
