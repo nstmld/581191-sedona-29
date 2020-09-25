@@ -307,6 +307,21 @@ img {
   background-color: var(--basic-light-gray);
 }
 
+.two-stars {
+  background-image: url(../img/star.svg);
+  background-repeat: repeat-x;
+}
+
+.three-stars {
+  background-image: url(../img/star.svg);
+  background-repeat: repeat-x;
+}
+
+.four-stars {
+  background-image: url(../img/star.svg);
+  background-repeat: repeat-x;
+}
+
 /* main footer */
 
 .main-footer {
