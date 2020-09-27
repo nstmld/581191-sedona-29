@@ -202,14 +202,24 @@ img {
 
 /* reasons list */
 
-.reasons-list {
+.reasons-list-block {
   background-color: var(--reasons-list-gray);
+}
+
+.reasons-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* recommendations */
 
 .recommendations {
   background-color: var(--basic-white);
+}
+
+.recommendations-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* hotels search */
