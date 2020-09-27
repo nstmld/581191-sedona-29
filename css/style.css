@@ -106,8 +106,6 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-
-
 /*main links */
 
 .main-navigation-links a:visited,
@@ -143,6 +141,24 @@ img {
 
 .main-cover {
   background-color: var(--basic-white);
+}
+
+.main-cover-image {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main-cover-image-text {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.main-cover-image-foto {
+  grid-column: 1;
+  grid-row: 1;
+  position: inherit;
 }
 
 .reasons {
