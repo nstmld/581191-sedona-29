@@ -406,6 +406,8 @@ img {
 
 .main-footer {
   background-color: var(--footer-gray);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts {
