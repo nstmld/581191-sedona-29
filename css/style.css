@@ -169,15 +169,36 @@ img {
 
 /* reasons with image */
 
-.reason-with-image .heading {
+.reason-with-image-right .heading,
+.reason-with-image-left .heading {
   color: var(--basic-white);
 }
 
-.reason-with-image {
+.reason-with-image-right,
+.reason-with-image-left {
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
+.reason-with-image-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.reason-with-image-right img {
+  grid-column: 2;
+  grid-row: 1 / 4;
+}
+
+.reason-with-image-left {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.reason-with-image-left img {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
 
 /* reasons list */
 
