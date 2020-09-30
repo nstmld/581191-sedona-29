@@ -144,21 +144,11 @@ img {
 }
 
 .main-cover-image {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.main-cover-image-text {
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
+  display: block;
   margin: 0 auto;
-}
-
-.main-cover-image-foto {
-  grid-column: 1;
-  grid-row: 1;
-  position: inherit;
+  background-image: url(../img/main-cover.jpg);
+  background-color: var(--basic-brown);
+  background-repeat: no-repeat;
 }
 
 .reasons {
