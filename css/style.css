@@ -297,6 +297,23 @@ img {
 .hotel-list-item {
   border-bottom: 1px solid var(--form-focus-gray);
   text-align: left;
+  display: grid;
+  grid-template-columns: 135px 793px 129px;
+  margin: 0 auto;
+  width: 1056px;
+  grid-template-areas: "hotel-foto hotel-info hotel-rating";
+}
+
+.hotel-list-item a {
+  grid-area: hotel-foto;
+}
+
+.hotel-info {
+  grid-area: hotel-info;
+}
+
+.stars-and-rating {
+  grid-area: hotel-rating;
 }
 
 .hotel-header {
