@@ -97,11 +97,31 @@ img {
 }
 
 .main-navigation-logo {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
 
 }
 
 .main-navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1056px;
+  justify-content: center;
+}
 
+.main-navigation-links li{
+  flex-grow: 1;
+}
+
+.main-navigation-links-left {
+  text-align: left;
+}
+
+.main-navigation-links-right {
+  text-align: right;
 }
 
 /* main links */
