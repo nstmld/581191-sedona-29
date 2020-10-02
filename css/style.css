@@ -128,23 +128,27 @@ img {
 
 /* main links */
 
-.main-navigation-links a:visited,
+.main-navigation-links-left a:visited,
+.main-navigation-links-right a:visited,
 .footer-contacts a:visited {
   color: var(--basic-black);
 }
 
-.main-navigation-links a:hover,
+.main-navigation-links-left a:hover,
+.main-navigation-links-right a:hover,
 .footer-contacts a:hover {
   color: var(--basic-blue);
 }
 
-.main-navigation-links a:active,
+.main-navigation-links-left a:active,
+.main-navigation-links-right a:active,
 .footer-contacts a:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.main-navigation-links a:not([href]) {
+.main-navigation-links-left a:not([href]),
+.main-navigation-links-right a:not([href]) {
   color: var(--basic-brown);
 }
 
