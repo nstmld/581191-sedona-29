@@ -93,35 +93,37 @@ img {
 .main-navigation {
   font-weight: 700;
   line-height: 26px;
+  width: 1054px;
+  margin: 0 auto;
   color: var(--basic-black);
+  display: flex;
 }
 
 .main-navigation-logo {
   position: absolute;
-  display: block;
   left: 50%;
   transform: translate(-50%);
-
-}
-
-.main-navigation-links {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 1056px;
-  justify-content: center;
-}
-
-.main-navigation-links li{
-  flex-grow: 1;
 }
 
 .main-navigation-links-left {
+  display: flex;
+  margin-right: auto;
+  width: 458px;
+  flex-wrap: wrap;
   text-align: left;
 }
 
 .main-navigation-links-right {
+  display: flex;
+  margin-left: auto;
+  width: 458px;
+  flex-wrap: wrap;
   text-align: right;
+}
+
+.main-navigation-links-left li,
+.main-navigation-links-right li {
+  flex-grow: 1;
 }
 
 /* main links */
@@ -320,7 +322,7 @@ img {
   display: grid;
   grid-template-columns: 135px 793px 129px;
   margin: 0 auto;
-  width: 1056px;
+  width: 1054px;
   grid-template-areas: "hotel-foto hotel-info hotel-rating";
 }
 
