@@ -425,6 +425,11 @@ img {
   color: inherit;
 }
 
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-social-button {
   background-color: var(--basic-blue);
 }
