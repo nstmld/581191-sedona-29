@@ -13,7 +13,7 @@
 
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-navigation-logo">
+          <a class="main-navigation-logo" href="index.html">
             <img src="img/logo.svg" width="138" height="70" alt="Перейти на главную страницу">
           </a>
           <ul class="main-navigation-links-left clear-list">
@@ -37,21 +37,24 @@
 
         <section class="search-result">
           <h2 class="visually-hidden">Список гостиниц</h2>
-          <p class="search-result-amount">найдено: 3</p>
-          <p class="sort">сортировка:</p>
-          <ul class="sort-items clear-list">
-            <li><a>по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
-          </ul>
-          <ul class="clear-list sort-by-price">
-            <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10">
-            <path d="M5.5 0L0 10H11L5.5 0Z"/></svg></a>
-            </li>
-            <li><a><svg width="11" height="10" viewBox="0 0 11 10">
-            <path d="M5.5 10L11 0L0 0L5.5 10Z"/></svg></a>
-            </li>
-          </ul>
+
+          <div class="sort-results">
+            <p class="search-result-amount">найдено: 3</p>
+            <p class="sort">сортировка:</p>
+            <ul class="sort-by clear-list">
+              <li><a>по цене</a></li>
+              <li><a href="#">по типу</a></li>
+              <li><a href="#">по рейтингу</a></li>
+            </ul>
+            <ul class="sort-from-to clear-list">
+              <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 0L0 10H11L5.5 0Z"/></svg></a>
+              </li>
+              <li><a><svg width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L11 0L0 0L5.5 10Z"/></svg></a>
+              </li>
+            </ul>
+          </div>
 
           <ul class="hotel-list clear-list">
             <li class="hotel-list-item">

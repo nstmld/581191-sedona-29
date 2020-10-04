@@ -270,47 +270,75 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  width: 163px;
+  text-align: left;
 }
 
 .sort {
   font-size: 12px;
   line-height: 18px;
+  margin-right: 40px;
 }
 
-.sort-items a {
+.sort-results {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1054px;
+}
+
+.sort-by {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort-by li{
+  margin-right: 30px;
+}
+
+.sort-by a {
   font-size: 12px;
   line-height: 18px;
   color: var(--transparent-black);
   border-bottom: 1px dashed var(--basic-blue);
 }
 
-.sort-items a:hover {
+.sort-by a:hover {
   color: var(--basic-blue);
 }
 
-.sort-items a:active {
+.sort-by a:active {
   color: var(--basic-black);
   border-bottom: 0;
 }
 
-.sort-items a:not([href]) {
+.sort-by a:not([href]) {
   color: var(--basic-blue);
   border-bottom: 0;
 }
 
-.sort-by-price svg {
+.sort-from-to {
+  display: flex;
+  margin-left: auto;
+}
+
+.sort-from-to li{
+  margin-left: 12px;
+}
+
+.sort-from-to svg {
   fill: var(--filter-gray);
 }
 
-.sort-by-price svg:hover {
+.sort-from-to svg:hover {
   fill: var(--basic-black);
 }
 
-.sort-by-price svg:active {
+.sort-from-to svg:active {
   fill: var(--basic-blue);
 }
 
-.sort-by-price a:not([href]) svg{
+.sort-from-to a:not([href]) svg{
   fill: var(--basic-blue);
 }
 
