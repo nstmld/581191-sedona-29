@@ -70,6 +70,14 @@ img {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* grid */
 
 .wrapper {
@@ -161,7 +169,7 @@ img {
 .heading {
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   color: var(--basic-black);
 }
 
@@ -193,10 +201,13 @@ img {
   padding: 30px 200px;
 }
 
+.main-cover-heading h1{
+  line-height: 26px;
+}
+
 .reasons {
   margin-top: 45px;
   font-size: 14px;
-  line-height: 21px;
   font-weight: 400;
 }
 
@@ -204,18 +215,28 @@ img {
 
 .reason-with-image-right .heading,
 .reason-with-image-left .heading {
-  color: var(--basic-white);
+  color: inherit;
 }
 
-.reason-with-image-right,
-.reason-with-image-left {
-  background-color: var(--basic-blue);
+.reason-with-image-text {
   color: var(--basic-white);
+  padding: 25px 40px;
+}
+
+.reason-with-image-text span,
+.reason-with-image-text p {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.reason-with-image-text h3 {
+  margin-bottom: 0;
 }
 
 .reason-with-image-right {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  background-color: var(--basic-blue);
 }
 
 .reason-with-image-right img {
@@ -226,6 +247,7 @@ img {
 .reason-with-image-left {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  background-color: var(--basic-blue);
 }
 
 .reason-with-image-left img {
@@ -237,6 +259,12 @@ img {
 
 .reasons-list-block {
   background-color: var(--reasons-list-gray);
+}
+
+/* recommendations */
+
+.recommendations {
+  min-height: 330px;
 }
 
 /* hotels search */
