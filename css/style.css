@@ -94,6 +94,28 @@ img {
 .three-column-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 47px 0;
+}
+
+.three-column-list li {
+  justify-self: center;
+  align-self: baseline;
+}
+
+.three-column-list-item h3 {
+  margin: 0;
+}
+
+.three-column-list-item span,
+.three-column-list-item p {
+  display: block;
+  margin-top: 25px;
+  width: 285px;
+}
+
+.three-column-list-item img {
+  padding-top: 5px;
+  padding-bottom: 25px;
 }
 
 /* main header */
