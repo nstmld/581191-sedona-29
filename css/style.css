@@ -97,12 +97,14 @@ img {
   margin: 0 auto;
   color: var(--basic-black);
   display: flex;
+  min-height: 56px;
 }
 
 .main-navigation-logo {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 }
 
 .main-navigation-links-left {
@@ -110,6 +112,7 @@ img {
   margin-right: auto;
   width: 458px;
   flex-wrap: wrap;
+  align-items: center;
   text-align: left;
 }
 
@@ -118,6 +121,7 @@ img {
   margin-left: auto;
   width: 458px;
   flex-wrap: wrap;
+  align-items: center;
   text-align: right;
 }
 
@@ -157,21 +161,40 @@ img {
 .heading {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   color: var(--basic-black);
 }
 
 /* main-cover */
 
 .main-cover-image {
+  position: relative;
   display: block;
   margin: 0 auto;
+  width: 1200px;
+  height: 509px;
   background-image: url(../img/main-cover.jpg);
   background-color: var(--basic-brown);
   background-repeat: no-repeat;
+  background-position: center 0;
+  clip-path: polygon(0px 0px, 1200px 0px, 1200px 452px, 950px 477px, 950px 453px, 606px 509px, 594px 509px, 250px 453px, 250px 477px, 0 452px);
+}
+
+.main-cover-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-cover-heading {
+  min-height: 216px;
+  box-sizing: border-box;
+  padding: 30px 200px;
 }
 
 .reasons {
+  margin-top: 45px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
