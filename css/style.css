@@ -91,6 +91,7 @@ img {
   grid-template-columns: 1fr;
   align-content: start;
   background-color: var(--basic-white);
+  position: relative;
 }
 
 .main-header {
@@ -101,6 +102,7 @@ img {
 .container {
   grid-row: 2;
   grid-column: 1;
+  height: auto;
 }
 
 .three-column-list-item img {
@@ -347,6 +349,7 @@ img {
   border: none;
   background-color: var(--basic-brown);
   color: var(--basic-white);
+  cursor: pointer;
 }
 
 .hotels-search-button:hover {
@@ -359,7 +362,8 @@ img {
 }
 
 /* map */
-  .map {
+.map {
+  height: 594px;
 
 
   }
@@ -557,19 +561,28 @@ img {
 
 .main-footer {
   background-color: var(--footer-gray);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column: 1;
-  grid-row: 1;
+  display: flex;
   height: 120px;
   z-index: 1;
-  justify-self: end;
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 73px;
+  box-sizing: border-box;
 }
 
 .footer-contacts {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  flex-basis: 327px;
+}
+
+.footer-contacts p {
+  line-height: 35px;
+  margin: 0;
 }
 
 .footer-phone {
@@ -578,15 +591,31 @@ img {
 
 .footer-hashtag {
   color: inherit;
+  display: block;
+}
+
+.footer-social {
+  flex-basis: 400px;
+  align-self: center;
 }
 
 .footer-social-list {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
 }
 
 .footer-social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
 }
 
 .footer-social-button:hover {
@@ -603,6 +632,7 @@ img {
 
 .footer-copyright {
   line-height: 26px;
+  flex-basis: 327px;
 }
 
 .logo-academy svg {
