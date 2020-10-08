@@ -149,12 +149,12 @@ img {
 
 /* main links */
 
-.main-navigation-links {
+.main-navigation-links a:visited,
+.footer-contacts a:visited {
   color: var(--basic-black);
 }
 
-.main-navigation-links a:visited,
-.footer-contacts a:visited {
+.main-navigation-links {
   color: var(--basic-black);
 }
 
