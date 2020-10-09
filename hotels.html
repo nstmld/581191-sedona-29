@@ -22,7 +22,7 @@
           </ul>
           <ul class="main-navigation-links-right main-navigation-links clear-list">
             <li><a href="blank.html">карта штата</a></li>
-            <li><a href="hotels.html">гостиницы</a></li>
+            <li><a>гостиницы</a></li>
         </ul>
         </nav>
       </header>
@@ -32,7 +32,61 @@
 
         <section class="search-filter">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
-          <!-- Здесь будет форма фильтра -->
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>Инфраструктура:</legend>
+                  <ul>
+                    <li>
+                      <input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
+                      <label for="filter-pool">Бассейн</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden" type="checkbox" name="parking" id="filter-parking">
+                      <label for="filter-parking">Парковка</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden" type="checkbox" name="wifi" id="filter-wifi" checked>
+                      <label for="filter-wifi">Wi-fi</label>
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                  <ul>
+                    <li>
+                      <input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+                      <label for="filter-pool">Гостиница</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden" type="checkbox" name="motel" id="filter-motel">
+                      <label for="filter-parking">Мотель</label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden" type="checkbox" name="condo" id="filter-condo" checked>
+                      <label for="filter-wifi">Апартаменты</label>
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Стоимость в сутки (Р):</legend>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="3000">
+                    </label>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
+                  <button type="button" class="filter-button">показать</button>
+              </fieldset>
+            </form>
         </section>
 
         <section class="search-result">

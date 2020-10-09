@@ -169,7 +169,7 @@ img {
   opacity: 0.3;
 }
 
-.main-navigation-links-left a:not([href]) {
+.main-navigation-links a:not([href]) {
   color: var(--basic-brown);
 }
 
