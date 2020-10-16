@@ -19,6 +19,11 @@
   --form-focus-gray: #E5E5E5;
   --form-shadow: rgba(0, 1, 1, 0.15);
 
+  --checkbox-disabled: #6A6A6A;
+
+  --toggle-gray: #ABABAB;
+  --toggle-gray-shadow: rgba(171,171,171,0.3);
+
   --footer-gray: rgba(255, 255, 255, 0.9);
 
   --background-shadow: rgba(0, 1, 1, 0.2);
@@ -363,12 +368,178 @@ img {
 /* hotels filter */
 
 .search-filter {
+  width: 1200px;
   background-color: var(--basic-brown);
   background-image: url(../img/background.jpg);
-  background-position: top center;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   color: var(--basic-white);
   text-align: left;
+}
+
+.filter {
+  display: flex;
+  padding: 27px 73px;
+  padding-bottom: 18px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  padding-right: 118px;
+}
+
+.filter fieldset:last-child {
+  margin-left: auto;
+  padding-right: 0;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.filter-checkbox label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding: 13px 0;
+  padding-left: 41px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label {
+  color: var(--checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: not-allowed;
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: not-allowed;
+}
+
+.price-controls-numbers {
+  width: 314px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  position: relative;
+  padding: 6px 0;
+}
+
+.price-controls-numbers::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+}
+
+.input-price {
+  width: auto;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  color: var(--basic-white);
+  appearance: textfield;
+}
+
+.price-controls-label {
+  padding-left: 65px;
+}
+
+.range-controls {
+  padding: 20px 0;
+  position: relative;
+}
+
+.range-controls .scale {
+  width: 316px;
+  height: 2px;
+  background-color: var(--transparent-white);
+}
+
+.range-controls .bar {
+  height: 2px;
+  width: 86%;
+  background-color: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 3.5px;
+  height: 3.5px;
+  padding: 0;
+  border: 7.3px solid var(--basic-white);
+  background-color: var(--toggle-gray);
+  border-radius: 50%;
+  box-shadow: 0px 2px 0px 0px var(--toggle-gray-shadow);
+}
+
+.range-controls .toggle-max {
+  left: 80%;
+}
+
+.filter-button {
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 8px 35px;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: inherit;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
 }
 
 /* search result */
