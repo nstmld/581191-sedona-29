@@ -92,7 +92,7 @@ img {
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   display: grid;
-  grid-template-rows: min-content 1fr;
+  grid-template-rows: min-content 1fr min-content;
   grid-template-columns: 1fr;
   align-content: start;
   background-color: var(--basic-white);
@@ -467,7 +467,7 @@ img {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   position: relative;
-  padding: 6px 0;
+  padding: 5px 0;
 }
 
 .price-controls-numbers::before {
@@ -515,10 +515,10 @@ img {
   position: absolute;
   top: 11px;
   left: 0;
-  width: 3.5px;
-  height: 3.5px;
+  width: 4px;
+  height: 4px;
   padding: 0;
-  border: 7.3px solid var(--basic-white);
+  border: 8px solid var(--basic-white);
   background-color: var(--toggle-gray);
   border-radius: 50%;
   box-shadow: 0px 2px 0px 0px var(--toggle-gray-shadow);
@@ -532,7 +532,7 @@ img {
   border: 2px solid #FFFFFF;
   background-color: transparent;
   border-radius: 2px;
-  padding: 8px 35px;
+  padding: 8px 37px;
   color: inherit;
   font-size: inherit;
   font-family: inherit;
@@ -546,6 +546,7 @@ img {
 
 .search-result {
   background-color: var(--basic-white);
+  width: 1200px;
 }
 
 .search-result-amount {
@@ -560,22 +561,23 @@ img {
   font-size: 12px;
   line-height: 18px;
   margin-right: 40px;
+  margin-top: 6px;
 }
 
 .sort-results {
   display: flex;
   align-items: center;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding: 9px 73px;
 }
 
 .sort-by {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -4px;
 }
 
 .sort-by li {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 .sort-by a {
@@ -634,29 +636,29 @@ img {
   border-bottom: 1px solid var(--form-focus-gray);
   text-align: left;
   display: grid;
-  padding-left: 73px;
-  padding-right: 73px;
-  grid-template-columns: 135px 793px 129px;
-  grid-template-areas: "hotel-foto hotel-info hotel-rating";
+  padding: 28px 73px;
+  grid-template-columns: 135px min-content min-content 1fr 110px;
+  grid-template-rows: min-content min-content min-content;
 }
 
-.hotel-list-item a {
-  grid-area: hotel-foto;
-}
-
-.hotel-info {
-  grid-area: hotel-info;
-}
-
-.stars-and-rating {
-  grid-area: hotel-rating;
+.hotel-image {
+  grid-column: 1;
+  grid-row: 1/4;
 }
 
 .hotel-header {
+  grid-column: 2/5;
+  grid-row: 1;
+  margin: 0;
+  margin-left: 29px;
+}
+
+.hotel-header h3 {
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 16px;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .hotel-header:hover {
@@ -667,19 +669,38 @@ img {
   color: var(--transparent-black);
 }
 
+.hotel-type {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  margin-left: 29px;
+}
+
+.hotel-price-from {
+  grid-column: 3;
+  grid-row: 2;
+  margin: 0;
+  margin-left: 8px;
+}
+
 .more-button {
   color: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   background-color: var(--basic-blue);
+  grid-column: 2;
+  grid-row: 3;
+  padding: 3px 16px;
+  margin-left: 29px;
+  align-self: center;
 }
 
-.more-button:hover{
+.more-button:hover {
   background-color: var(--middle-blue);
 }
 
-.more-button:active{
+.more-button:active {
   background-color: var(--dark-blue);
   color: var(--transparent-white);
 }
@@ -688,6 +709,11 @@ img {
   color: var(--basic-white);
   font-weight: 700;
   background-color: var(--basic-brown);
+  grid-column: 3;
+  grid-row: 3;
+  margin-left: 7px;
+  padding: 3px 16px;
+  align-self: center;
 }
 
 .book-button:hover {
@@ -699,24 +725,46 @@ img {
   color: var(--transparent-white);
 }
 
+.stars {
+  grid-column: 5;
+  grid-row: 1;
+  justify-self: end;
+  margin: 0;
+}
+
 .rating {
+  margin: 0;
   color: var(--hotel-middle-gray);
   background-color: var(--basic-light-gray);
+  grid-column: 5;
+  grid-row: 3;
+  padding: 3px 12px;
+  text-align: center;
+  align-self: center;
 }
 
 .two-stars {
   background-image: url(../img/star.svg);
-  background-repeat: repeat-x;
+  width: 50px;
+  background-repeat: no-repeat;
 }
 
 .three-stars {
   background-image: url(../img/star.svg);
-  background-repeat: repeat-x;
+  width: 70px;
+  background-repeat: no-repeat;
 }
 
 .four-stars {
   background-image: url(../img/star.svg);
-  background-repeat: repeat-x;
+  width: 90px;
+  background-repeat: no-repeat;
+}
+
+.five-stars {
+  background-image: url(../img/star.svg);
+  width: 110px;
+  background-repeat: no-repeat;
 }
 
 /* main footer */
@@ -728,6 +776,12 @@ img {
   z-index: 1;
   justify-content: center;
   align-items: center;
+}
+
+.footer-include {
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer-contacts {
