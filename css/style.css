@@ -523,6 +523,11 @@ img {
   box-shadow: 0px 2px 0px 0px var(--toggle-gray-shadow);
 }
 
+.toggle:hover {
+  transform: scale(1.2, 1.1);
+  cursor: pointer;
+}
+
 .range-controls .toggle-max {
   left: 80%;
 }
