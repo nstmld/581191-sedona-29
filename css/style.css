@@ -533,7 +533,7 @@ img {
 }
 
 .filter-button {
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--basic-white);
   background-color: transparent;
   border-radius: 2px;
   padding: 8px 37px;
@@ -544,6 +544,13 @@ img {
   display: block;
   margin: 0 auto;
   margin-top: 12px;
+}
+
+.filter-button:hover {
+  border: 2px solid var(--basic-white);
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  cursor: pointer;
 }
 
 /* search result */
