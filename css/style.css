@@ -487,7 +487,6 @@ img {
   background-color: transparent;
   text-align: left;
   color: var(--basic-white);
-  appearance: textfield;
 }
 
 .price-controls-label {
