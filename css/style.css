@@ -159,7 +159,7 @@ img {
   color: var(--basic-black);
 }
 
-.main-navigation-links {
+.main-navigation-links a {
   color: var(--basic-black);
 }
 
