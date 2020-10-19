@@ -21,6 +21,8 @@
 
   --checkbox-disabled: #6A6A6A;
 
+  --calendar-fill: #A9A9A9;
+
   --toggle-gray: #ABABAB;
   --toggle-gray-shadow: rgba(171,171,171,0.3);
 
@@ -363,6 +365,197 @@ img {
 /* map */
 .map {
   height: 594px;
+  position: relative;
+}
+
+/* modal */
+
+.modal-hotel-search {
+  background: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  font-weight: 700;
+  width: 568px;
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 38px 55px;
+}
+
+.hotel-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hotel-search-form label {
+  align-self: center;
+}
+
+.hotel-search-input {
+  background-color: var(--basic-light-gray);
+  border: 0;
+  box-sizing: border-box;
+}
+
+.hotel-search-input:hover {
+  background-color: var(--form-hover-gray);
+}
+
+.hotel-search-input:focus {
+  outline: none;
+  resize:none;
+  background-color: transparent;
+  border: 3px solid var(--form-focus-gray);
+}
+
+.input-date-block {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 13px;
+}
+
+.input-date {
+  width: 346px;
+  height: 38px;
+  box-sizing: border-box;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 30px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+}
+
+.input-calendar {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  justify-self: end;
+  z-index: 1;
+}
+
+.input-calendar svg {
+  fill: var(--calendar-fill);
+}
+
+.input-calendar:hover svg {
+  cursor: pointer;
+  fill: var(--basic-black);
+}
+
+.input-calendar:active svg {
+  fill: var(--basic-blue);
+}
+
+.input-amount-block {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 13px;
+}
+
+.input-people {
+  appearance: none;
+  width: 38px;
+  height: 38px;
+  align-self: flex-end;
+  text-align: center;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.input-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-people {
+  -moz-appearance: textfield;
+}
+
+.minus-button,
+.plus-button {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-color: var(--basic-light-gray);
+  cursor: pointer;
+}
+
+.minus-button::before {
+  position: absolute;
+  content: "";
+  left: 13px;
+  top: 18px;
+  width: 12px;
+  height: 3px;
+  background-color: var(--calendar-fill);
+}
+
+.plus-button::before,
+.plus-button::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 2.7px;
+  left: 13px;
+  top: 18px;
+  background-color: var(--calendar-fill);
+}
+
+.plus-button::after {
+  transform: rotate(90deg);
+}
+
+.minus-button:hover::before,
+.plus-button:hover::before,
+.plus-button:hover::after {
+  background-color: var(--basic-black);
+}
+
+.minus-button:active::before,
+.plus-button:active::before,
+.plus-button:active::after {
+  background-color: var(--basic-blue);
+}
+
+.button-search {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  width: 458px;
+  padding: 16px 0;
+  margin-top: 43px;
+  margin-bottom: 16px;
+  border: 0;
+}
+
+.button-search:hover {
+  background-color: var(--middle-blue);
+}
+
+.button-search:active {
+  background-color: var(--dark-blue);
+  color: var(--transparent-white);
 }
 
 /* hotels filter */
@@ -877,45 +1070,4 @@ img {
 
 .logo-academy:active svg {
   fill: var(--active-logo-academy);
-}
-
-/* modal */
-
-.modal-hotel-search {
-  background: var(--basic-white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  font-weight: 700;
-}
-
-.button-search {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-  font-family: inherit;
-  font-weight: inherit;
-  text-transform: inherit;
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.button-search:hover {
-  background-color: var(--middle-blue);
-}
-
-.button-search:active {
-  background-color: var(--dark-blue);
-  color: var(--transparent-white);
-}
-
-.input-date {
-  background-color: var(--basic-light-gray);
-  border: 0;
-}
-
-.input-date:hover {
-  background-color: var(--form-hover-gray);
-}
-
-.input-date:focus {
-  background-color: transparent;
-  border: 3px solid var(--form-focus-gray);
 }
