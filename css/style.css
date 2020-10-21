@@ -377,7 +377,6 @@ img {
   width: 568px;
   box-sizing: border-box;
   position: absolute;
-  display: block;
   left: 50%;
   transform: translate(-50%);
   padding: 38px 55px;
@@ -547,6 +546,7 @@ img {
   margin-top: 43px;
   margin-bottom: 16px;
   border: 0;
+  cursor: pointer;
 }
 
 .button-search:hover {
