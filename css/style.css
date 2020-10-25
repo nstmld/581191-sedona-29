@@ -939,13 +939,14 @@ img {
 
 .two-stars {
   background-image: url(../img/star.svg);
-  width: 50px;
+  width: 42px;
   background-repeat: no-repeat;
+
 }
 
 .three-stars {
   background-image: url(../img/star.svg);
-  width: 70px;
+  width: 66px;
   background-repeat: no-repeat;
 }
 
