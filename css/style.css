@@ -53,7 +53,7 @@
   background-color: var(--basic-light-gray);
 }
 
-.page-body  {
+.page-body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -362,6 +362,7 @@ img {
 .map {
   height: 594px;
   position: relative;
+  border: 0;
 }
 
 /* modal */
