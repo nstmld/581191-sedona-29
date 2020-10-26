@@ -919,13 +919,6 @@ img {
   color: var(--transparent-white);
 }
 
-.stars {
-  grid-column: 5;
-  grid-row: 1;
-  justify-self: end;
-  margin: 0;
-}
-
 .rating {
   margin: 0;
   color: var(--hotel-middle-gray);
@@ -937,29 +930,29 @@ img {
   align-self: center;
 }
 
-.two-stars {
+.stars {
+  grid-column: 5;
+  grid-row: 1;
+  justify-self: end;
+  margin: 0;
   background-image: url(../img/star.svg);
-  width: 42px;
   background-repeat: no-repeat;
+}
 
+.two-stars {
+  width: 42px;
 }
 
 .three-stars {
-  background-image: url(../img/star.svg);
   width: 66px;
-  background-repeat: no-repeat;
 }
 
 .four-stars {
-  background-image: url(../img/star.svg);
   width: 90px;
-  background-repeat: no-repeat;
 }
 
 .five-stars {
-  background-image: url(../img/star.svg);
   width: 110px;
-  background-repeat: no-repeat;
 }
 
 /* blank page */
