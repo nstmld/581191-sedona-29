@@ -71,10 +71,10 @@
                 <legend>Стоимость в сутки (Р):</legend>
                   <div class="price-controls-numbers">
                     <label class="price-controls-label">
-                      от <input class="input-price" type="number" name="min-price" value="0" min="0" max="9999">
+                      от <input class="input-price" type="number" name="min-price" value="0" min="0" max="9999" aria-label="Стоимость за сутки в рублях от">
                     </label>
                     <label class="price-controls-label">
-                      до <input class="input-price" type="number" name="max-price" value="3000" min="0" max="9999">
+                      до <input class="input-price" type="number" name="max-price" value="3000" min="0" max="9999" aria-label="Стоимость за сутки в рублях до">
                     </label>
                   </div>
                   <div class="range-controls">
@@ -84,66 +84,66 @@
                     <div class="toggle toggle-min"></div>
                     <div class="toggle toggle-max"></div>
                   </div>
-                  <button type="button" class="filter-button">показать</button>
+                  <button type="button" class="filter-button" aria-label="Вывести результаты поиска по фильрам">показать</button>
               </fieldset>
             </form>
         </section>
 
         <section class="search-result">
-          <h2 class="visually-hidden">Список гостиниц</h2>
+          <h2 class="visually-hidden">Результаты поиска</h2>
 
           <div class="sort-results">
             <p class="search-result-amount">найдено: 3</p>
             <p class="sort">сортировка:</p>
             <ul class="sort-by clear-list">
-              <li><a>по цене</a></li>
-              <li><a href="#">по типу</a></li>
-              <li><a href="#">по рейтингу</a></li>
+              <li><a aria-label="сортировать по цене">по цене</a></li>
+              <li><a href="#" aria-label="сортировать по типу">по типу</a></li>
+              <li><a href="#" aria-label="сортировать по рейтингу">по рейтингу</a></li>
             </ul>
             <ul class="sort-from-to clear-list">
-              <li><a class="sort-from-to-button" href="#"><svg width="11" height="10" viewBox="0 0 11 10">
+              <li><a class="sort-from-to-button" href="#" aria-label="сортировать по возрастанию"><svg width="11" height="10" viewBox="0 0 11 10">
               <path d="M5.5 0L0 10H11L5.5 0Z"/></svg></a>
               </li>
-              <li><a class="sort-from-to-button"><svg width="11" height="10" viewBox="0 0 11 10">
+              <li><a class="sort-from-to-button" aria-label="сортировать по убыванию"><svg width="11" height="10" viewBox="0 0 11 10">
               <path d="M5.5 10L11 0L0 0L5.5 10Z"/></svg></a>
               </li>
             </ul>
           </div>
 
-          <ul class="hotel-list clear-list">
+          <ul class="hotel-list clear-list" aria-label="Список гостиниц">
             <li class="hotel-list-item">
               <a class="hotel-image" href="blank.html">
-                <img src="img/amara-resort.jpg" width="135" height="90" alt="">
+                <img src="img/amara-resort.jpg" width="135" height="90" alt="Отель в горах с бассейном и зелёной территорией">
               </a>
               <a class="hotel-header" href="blank.html"><h3>Amara Resort & Spa</h3></a>
               <p class="hotel-type">гостиница</p>
-              <p class="hotel-price-from">от 4000 Р.</p>
-              <a class="more-button" href="blank.html">подробнее</a>
-              <a class="book-button" href="blank.html">забронировать</a>
+              <p class="hotel-price-from" aria-label="Стоимость за ночь в рублях">от 4000 Р.</p>
+              <a class="more-button" href="blank.html" aria-label="Перейти на страницу гостиницы">подробнее</a>
+              <a class="book-button" href="blank.html" aria-label="Перейти на страницу бронирования">забронировать</a>
               <p class="stars four-stars"><span class="visually-hidden">четыре звезды</span></p>
               <p class="rating">Рейтинг: 8,5</p>
             </li>
             <li class="hotel-list-item">
               <a class="hotel-image" href="blank.html">
-                <img src="img/desert-quail.jpg" width="135" height="90" alt="">
+                <img src="img/desert-quail.jpg" width="135" height="90" alt="Небольшой мотель с резным знаком и фонтанчиком при въезде">
               </a>
               <a class="hotel-header" href="blank.html"><h3>Desert Quail Inn</h3></a>
               <p class="hotel-type">мотель</p>
               <p class="hotel-price-from">от 3000 Р.</p>
-              <a class="more-button" href="blank.html">подробнее</a>
-              <a class="book-button" href="blank.html">забронировать</a>
+              <a class="more-button" href="blank.html" aria-label="Перейти на страницу гостиницы">подробнее</a>
+              <a class="book-button" href="blank.html" aria-label="Перейти на страницу бронирования">забронировать</a>
               <p class="stars three-stars"><span class="visually-hidden">три звезды</span></p>
               <p class="rating">Рейтинг: 8,9</p>
             </li>
             <li class="hotel-list-item">
               <a class="hotel-image" href="blank.html">
-                <img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="">
+                <img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="Небольшой дом на очень зелёной территории с деревьями и газонами">
               </a>
               <a class="hotel-header" href="blank.html"><h3>Villas at Poco Diablo</h3></a>
               <p class="hotel-type">апартаменты</p>
               <p class="hotel-price-from">от 2000 Р.</p>
-              <a class="more-button" href="blank.html">подробнее</a>
-              <a class="book-button" href="blank.html">забронировать</a>
+              <a class="more-button" href="blank.html" aria-label="Перейти на страницу гостиницы">подробнее</a>
+              <a class="book-button" href="blank.html" aria-label="Перейти на страницу бронирования">забронировать</a>
               <p class="stars two-stars"><span class="visually-hidden">две звезды</span></p>
               <p class="rating">Рейтинг: 9,2</p>
             </li>
