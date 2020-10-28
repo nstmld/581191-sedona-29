@@ -374,13 +374,28 @@ img {
   width: 568px;
   box-sizing: border-box;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+  left: 316px;
   padding: 38px 55px;
+}
+
+.modal-hotel-search-show {
+  animation: modal-show 0.4s;
 }
 
 .modal-hotel-search-hide {
   display: none;
+}
+
+@keyframes modal-show {
+  0% {
+    transform: translateY(-140px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hotel-search-form {
