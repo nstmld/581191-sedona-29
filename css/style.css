@@ -379,6 +379,10 @@ img {
   padding: 38px 55px;
 }
 
+.modal-hotel-search-hide {
+  display: none;
+}
+
 .hotel-search-form {
   display: flex;
   flex-wrap: wrap;
