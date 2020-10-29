@@ -7,6 +7,7 @@ const inputAdult = formBlock.querySelector("#amount-adult");
 const inputChild = formBlock.querySelector("#amount-child");
 let storageAdult = localStorage.getItem("adult");
 let storageChild = localStorage.getItem("child");
+let isStorageSupport = true;
 
 try {
   storageAdult = localStorage.getItem("adult");
@@ -22,10 +23,10 @@ buttonForm.addEventListener("click", function (evt) {
   formBlock.classList.toggle("modal-hotel-search-hide");
   formBlock.classList.toggle(".modal-hotel-search-show");
   inputDateIn.focus();
-  if (storageAdult){
+  if (storageAdult) {
     inputAdult.value = storageAdult;
   };
-  if (storageChild){
+  if (storageChild) {
     inputChild.value = storageChild;
   };
 });
