@@ -503,7 +503,6 @@ img {
 
 .minus-button,
 .plus-button {
-  position: relative;
   width: 38px;
   height: 38px;
   border: 0;
@@ -511,41 +510,21 @@ img {
   cursor: pointer;
 }
 
-.minus-button::before {
-  position: absolute;
-  content: "";
-  left: 13px;
-  top: 18px;
-  width: 12px;
-  height: 3px;
-  background-color: var(--calendar-fill);
+.minus-button svg,
+.plus-button svg {
+  display: block;
+  margin-left: 8px;
+  fill: var(--calendar-fill);
 }
 
-.plus-button::before,
-.plus-button::after {
-  position: absolute;
-  content: "";
-  width: 11px;
-  height: 2.7px;
-  left: 13px;
-  top: 18px;
-  background-color: var(--calendar-fill);
+.minus-button:hover svg,
+.plus-button:hover svg {
+  fill: var(--basic-black);
 }
 
-.plus-button::after {
-  transform: rotate(90deg);
-}
-
-.minus-button:hover::before,
-.plus-button:hover::before,
-.plus-button:hover::after {
-  background-color: var(--basic-black);
-}
-
-.minus-button:active::before,
-.plus-button:active::before,
-.plus-button:active::after {
-  background-color: var(--basic-blue);
+.minus-button:active svg,
+.plus-button:active svg {
+  fill: var(--basic-blue);
 }
 
 .button-search {
