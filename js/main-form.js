@@ -1,10 +1,10 @@
 const buttonForm = document.querySelector(".hotels-search-button");
 const formBlock = document.querySelector(".modal-hotel-search");
 const searchForm = formBlock.querySelector(".hotel-search-form");
-let inputDateIn = formBlock.querySelector("#check-in-date");
-let inputDateOut = formBlock.querySelector("#check-out-date");
-let inputAdult = formBlock.querySelector("#amount-adult");
-let inputChild = formBlock.querySelector("#amount-child");
+const inputDateIn = formBlock.querySelector("#check-in-date");
+const inputDateOut = formBlock.querySelector("#check-out-date");
+const inputAdult = formBlock.querySelector("#amount-adult");
+const inputChild = formBlock.querySelector("#amount-child");
 let storageAdult = localStorage.getItem("adult");
 let storageChild = localStorage.getItem("child");
 
