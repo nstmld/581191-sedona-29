@@ -25,10 +25,10 @@ buttonForm.addEventListener("click", function (evt) {
   inputDateIn.focus();
   if (storageAdult) {
     inputAdult.value = storageAdult;
-  };
+  }
   if (storageChild) {
     inputChild.value = storageChild;
-  };
+  }
 });
 
 searchForm.addEventListener("submit", function (evt) {
