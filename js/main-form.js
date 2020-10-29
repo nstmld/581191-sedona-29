@@ -15,6 +15,8 @@ try {
   isStorageSupport = false;
 }
 
+formBlock.classList.add("modal-hotel-search-hide");
+
 buttonForm.addEventListener("click", function (evt) {
   evt.preventDefault();
   formBlock.classList.toggle("modal-hotel-search-hide");
