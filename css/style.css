@@ -240,7 +240,8 @@ img {
 .reason-with-image-text span,
 .reason-with-image-text p {
   display: inline-block;
-  margin-top: 25px;
+  vertical-align: top;
+  margin-top: 26px;
 }
 
 .reason-with-image-text h3 {
@@ -725,7 +726,7 @@ img {
   font-family: inherit;
   text-transform: inherit;
   display: block;
-  margin: 15px 0 0 85px;
+  margin: 15px auto;
 }
 
 .filter-button:hover {
