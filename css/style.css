@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
   --basic-white: #FFF;
   --basic-black: #000;
@@ -95,6 +102,7 @@ img {
   margin: 0 auto;
   box-shadow: 0px 0px 15px rgba(0, 1, 1, 0.2);
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   grid-template-columns: 1fr;
   align-content: start;
@@ -202,7 +210,8 @@ img {
   background-color: var(--basic-brown);
   background-repeat: no-repeat;
   background-position: center 0;
-  clip-path: polygon(0px 0px, 1200px 0px, 1200px 452px, 950px 477px, 950px 453px, 606px 509px, 594px 509px, 250px 453px, 250px 477px, 0 452px);
+  -webkit-clip-path: polygon(0px 0px, 1200px 0px, 1200px 452px, 950px 477px, 950px 453px, 606px 509px, 594px 509px, 250px 453px, 250px 477px, 0 452px);
+          clip-path: polygon(0px 0px, 1200px 0px, 1200px 452px, 950px 477px, 950px 453px, 606px 509px, 594px 509px, 250px 453px, 250px 477px, 0 452px);
 }
 
 .main-cover-image-text {
@@ -366,6 +375,10 @@ img {
   border: 0;
 }
 
+.map iframe {
+  border: 0;
+}
+
 /* modal */
 
 .modal-hotel-search {
@@ -380,11 +393,24 @@ img {
 }
 
 .modal-hotel-search-show {
-  animation: modal-show 0.4s;
+  -webkit-animation: modal-show 0.4s;
+          animation: modal-show 0.4s;
 }
 
 .modal-hotel-search-hide {
   display: none;
+}
+
+@-webkit-keyframes modal-show {
+  0% {
+    transform: translateY(-140px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes modal-show {
@@ -478,7 +504,9 @@ img {
 }
 
 .input-people {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 38px;
   height: 38px;
   align-self: flex-end;
@@ -592,7 +620,9 @@ img {
   display: block;
   cursor: pointer;
   padding: 13px 0 13px 41px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -830,7 +860,9 @@ img {
   text-align: left;
   display: grid;
   padding: 28px 73px;
+  grid-template-columns: 135px -webkit-min-content -webkit-min-content 1fr 110px;
   grid-template-columns: 135px min-content min-content 1fr 110px;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content;
 }
 
