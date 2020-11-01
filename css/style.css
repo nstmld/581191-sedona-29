@@ -362,11 +362,6 @@ img {
 }
 
 /* map */
-.map {
-  height: 594px;
-  position: relative;
-  border: 0;
-}
 
 .map iframe {
   border: 0;
@@ -431,8 +426,18 @@ img {
 
 .hotel-search-input {
   background-color: var(--basic-light-gray);
-  border: 0;
   box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+.input-date::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+.input-date::-moz-placeholder {
+  color: var(--basic-black);
+}
+.input-date::placeholder {
+  color: var(--basic-black);
 }
 
 .hotel-search-input:hover {
@@ -618,6 +623,11 @@ img {
           user-select: none;
 }
 
+.filter-checkbox label:focus {
+  color: var(--basic-blue);
+  outline: none;
+}
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -750,6 +760,7 @@ img {
   text-transform: inherit;
   display: block;
   margin: 15px auto;
+  transform: translateX(-4px);
 }
 
 .filter-button:hover {
@@ -783,7 +794,7 @@ img {
 .sort-results {
   display: flex;
   align-items: center;
-  padding: 9px 73px;
+  padding: 6px 73px 10px;
 }
 
 .sort-by {
@@ -828,6 +839,7 @@ img {
 
 .sort-from-to-button svg {
   fill: var(--filter-gray);
+  transform: translateY(3px);
 }
 
 .sort-from-to-button svg:hover {
@@ -852,7 +864,7 @@ img {
   border-bottom: 1px solid var(--form-focus-gray);
   text-align: left;
   display: grid;
-  padding: 28px 73px;
+  padding: 29px 73px 25px;
   grid-template-columns: 135px -webkit-min-content -webkit-min-content 1fr 110px;
   grid-template-columns: 135px min-content min-content 1fr 110px;
   grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
@@ -998,7 +1010,7 @@ img {
 
 .footer-include {
   margin-top: 0px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .footer-contacts {
