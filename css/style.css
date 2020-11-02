@@ -367,6 +367,12 @@ img {
   border: 0;
 }
 
+.map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 /* modal */
 
 .modal-hotel-search {
