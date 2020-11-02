@@ -430,16 +430,6 @@ img {
   border: 3px solid transparent;
 }
 
-.input-date::-webkit-input-placeholder {
-  color: var(--basic-black);
-}
-.input-date::-moz-placeholder {
-  color: var(--basic-black);
-}
-.input-date::placeholder {
-  color: var(--basic-black);
-}
-
 .hotel-search-input:hover {
   background-color: var(--form-hover-gray);
 }
@@ -464,11 +454,23 @@ img {
   grid-column: 1;
   grid-row: 1;
   padding: 0;
-  padding: 0 30px 0 15px;
+  padding: 0 25px 0 10px;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
   text-transform: inherit;
+}
+
+.input-date::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+.input-date::-moz-placeholder {
+  color: var(--basic-black);
+}
+
+.input-date::placeholder {
+  color: var(--basic-black);
 }
 
 .input-calendar {
@@ -526,6 +528,10 @@ img {
 .input-people,
 .input-price {
   -moz-appearance: textfield;
+}
+
+.label-children {
+  transform: translateX(14px);
 }
 
 .minus-button,
@@ -1002,7 +1008,8 @@ img {
 .main-footer {
   background-color: var(--footer-gray);
   display: flex;
-  margin-top: -120px;
+  margin-top: -110px;
+  padding: 20px 0;
   z-index: 1;
   justify-content: center;
   align-items: center;
